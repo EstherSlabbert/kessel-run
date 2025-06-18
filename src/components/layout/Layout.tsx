@@ -6,17 +6,14 @@ import { AppHeader } from '@/components/layout/AppHeader';
 import { NavMenu } from '@/components/layout/NavigationMenu';
 import { Link } from '@/components/links/Link';
 import { AppFooter } from '@/components/layout/AppFooter';
+import logo from '@/../public/krlogo-removebg-preview.png';
 
 export const Layout = () => {
   return (
     <>
       <AppHeader>
         <Link to="/" className="no-underline!">
-          <img
-            src="/krlogo-removebg-preview.png"
-            alt="Company Logo"
-            className="h-8 w-auto object-contain"
-          />
+          <img src={logo} alt="Company Logo" className="h-8 w-auto object-contain" />
           <span className="font-company-logo text-xl font-bold">Kessel Run</span>
         </Link>
         <NavMenu />
