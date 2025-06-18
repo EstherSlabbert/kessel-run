@@ -1,0 +1,6 @@
+dist
+coverage
+.vscode
+.github
+**/*.cjs
+**/*.md
